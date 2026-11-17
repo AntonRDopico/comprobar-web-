@@ -2,3 +2,4 @@
 Script que comprueba si una web responde.
 Uso: ./comprobar-web.sh URL
 Reqisitos: bash y curl .
+Ejemplo: ./comprobar-web.sh https://example.com
