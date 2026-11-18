@@ -7,3 +7,9 @@ echo "Código HTTP: $codigo"
 echo "Fecha: $(date '+%d/%m/%Y %H:%M')"
 echo "Tiempo: $(curl -sL -o /dev/null -w "%{time_total}" "$url") s"
 echo "IP: $(curl -sL -o /dev/null -w "%{remote_ip}" "$url")"
+if [ "$codigo" -lt 400 ]; then
+echo "Resultado: OK"
+else
+echo "Resultado: FALLO"
+exit 1
+fi
